@@ -59,8 +59,9 @@ class DynamicPersonListContainer extends Component {
 
     return (
       <section>
-        <h3>List of people</h3>
+        <h3>React_NoRedux_Fetch List of people</h3>
         <PersonList people={ this.state.people }/>
+        <button onClick={()=>this.fetchData('http://localhost:8001/people/')}>Refresh List! </button>
       </section>
     );
   }

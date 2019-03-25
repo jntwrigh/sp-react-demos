@@ -57,7 +57,7 @@ const mapDispatchToProps = function( dispatch ) {
 const ReduxCounter = connect( mapStateToProps, mapDispatchToProps )( Counter );
 
 // Store
-const store = createStore( reducer, applyMiddleware(logger) );
+const store = createStore( reducer,applyMiddleware(logger));
 
 const ConnectedComponent = () => (
   <Provider store={ store }>
